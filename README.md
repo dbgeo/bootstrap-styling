@@ -1,24 +1,11 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# A Ruby on Rails Bug Tracker
+The title says it all. For GVSU CIS 658. Directions
+[here](https://cis.gvsu.edu/~kurmasz/Teaching/Courses/W19/CIS658/Homework/CIS658_Homework4.pdf),
+hosted on Heroku [here](https://i.pinimg.com/736x/7f/d6/6e/7fd66e92e0be28b8e48ea36abdc65c0d.jpg).
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Authors
+- kkredit: Kevin Kredit
+  - Bug entities and validation tests
+- Brinjenga: Brian Mbeere
+  - User entities and validation tests
