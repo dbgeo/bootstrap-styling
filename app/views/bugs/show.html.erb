@@ -25,5 +25,10 @@
   <%= @bug.status %>
 </p>
 
-<%= link_to 'Edit', edit_bug_path(@bug) %> |
+<p>
+  <strong>Author:</strong>
+  <%= (@bug.author.try(:lname)) || "NA"%>
+</p>
+
+<%= link_to 'Edit', edit_bug_path(@bug) %>
 <%= link_to 'Back', bugs_path %>

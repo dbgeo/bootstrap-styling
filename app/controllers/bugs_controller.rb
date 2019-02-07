@@ -27,6 +27,9 @@ class BugsController < ApplicationController
   def create
     @bug = Bug.new(bug_params)
 
+  #  author = Author.find(bug_params [:author_id])
+  #  @bug.build_author(:id =>author.id)
+
     respond_to do |format|
       if @bug.save
         format.html { redirect_to @bug, notice: 'Bug was successfully created.' }
@@ -70,7 +73,7 @@ class BugsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def bug_params
-      params.require(:bug).permit(:title, :description, :issue_type, :priority, :status)
+      params.require(:bug).permit(:title, :description, :issue_type, :priority, :status, :author_id)
     end
 
     def set_enums

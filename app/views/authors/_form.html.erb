@@ -31,13 +31,7 @@
     <%= form.text_field :thumbnail %>
   </div>
 
-<div class="field">
-  <% form.label :author_id %>
-  <% form.select :author_id,
-     options_for_select(Author.all.collect { |a| ["#{a.lname},#{a.fname}",a.id]},
-     selected: (@bug.author ? @bug.author.id)), {} %>
 
-</div>
   <div class="actions">
     <%= form.submit %>
   </div>
